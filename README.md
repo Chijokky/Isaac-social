@@ -27,3 +27,12 @@ A responsive, animated portfolio website for Isaac Onyeani, Social Media Manager
 
 ## Accuracy note
 Project outcomes and follower figures are based on the information in the supplied CV. Do not add unsupported performance claims; update the case studies if you have verified analytics or permission to share additional details.
+
+
+## Vercel image troubleshooting
+This project expects these files to exist at the deployed paths:
+- `/assets/isaac-onyeani.png`
+- `/assets/client-feedback-page.png`
+- `/assets/client-feedback-ads.png`
+
+Keep the `assets` folder at the same level as `index.html` in the repository. Upload the entire project, not just `index.html`. In Vercel, check **Project → Settings → Build and Deployment**: set the Root Directory to the folder containing `index.html`; for a plain HTML site, use no build command and ensure the output directory includes `index.html` and `assets/`. Redeploy after committing the image files. You can test each image by opening its URL on your domain; if it returns 404, the image file is missing from the deployed output or the path/capitalization does not match.
